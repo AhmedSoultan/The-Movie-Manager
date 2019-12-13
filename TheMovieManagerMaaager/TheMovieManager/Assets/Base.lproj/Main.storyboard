@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IB1-v4-ETb">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +23,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Movie Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SyQ-Nw-CjV">
-                                <rect key="frame" x="16" y="136" width="343" height="31.5"/>
+                                <rect key="frame" x="16" y="136" width="343" height="33.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,18 +111,19 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="r7O-71-7fX"/>
                     <connections>
                         <outlet property="activityIndicator" destination="snT-QI-YPl" id="8aW-dx-aMv"/>
                         <outlet property="emailTextField" destination="qrT-hl-seK" id="kNU-Rr-pdO"/>
                         <outlet property="loginButton" destination="XfA-1k-xWc" id="gzO-wf-ODd"/>
                         <outlet property="loginViaWebsiteButton" destination="OHw-m7-7gh" id="Ghg-Tm-X1E"/>
                         <outlet property="passwordTextField" destination="R9P-8h-YZr" id="3kW-y3-iTs"/>
-                        <segue destination="KyE-Nk-bg6" kind="presentation" identifier="completeLogin" id="aGP-QK-myr"/>
+                        <segue destination="KyE-Nk-bg6" kind="push" identifier="completeLogin" id="aGP-QK-myr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1490" y="-789"/>
+            <point key="canvasLocation" x="-551.20000000000005" y="-789.35532233883066"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="YFI-aL-1fW">
@@ -130,7 +131,7 @@
                 <navigationController id="uaE-Ot-MhX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorites" image="Favorite" id="FFn-7V-wfS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NsS-9I-s2u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -146,11 +147,11 @@
             <objects>
                 <viewController id="IfO-JR-UB4" customClass="FavoritesViewController" customModule="TheMovieManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HB7-91-mBR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SvX-SL-BER">
-                                <rect key="frame" x="0.0" y="56" width="375" height="542"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" id="nMe-Rm-alN">
@@ -199,7 +200,7 @@
                 <navigationController id="fMU-fd-Ovv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Watchlist" image="List" id="Afd-zx-z0G"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UFF-Zp-6Lf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -215,11 +216,11 @@
             <objects>
                 <viewController id="ubh-7q-yMI" customClass="WatchlistViewController" customModule="TheMovieManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="08a-YW-0dI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CCl-fb-kBp">
-                                <rect key="frame" x="0.0" y="56" width="375" height="542"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" id="k1U-2d-iii">
@@ -267,11 +268,11 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="bMS-kJ-dg1" customClass="MovieDetailViewController" customModule="TheMovieManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8tG-T1-vTX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NaU-k0-IKa">
-                                <rect key="frame" x="0.0" y="603" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="URE-wt-fx7"/>
                                 </constraints>
@@ -289,7 +290,7 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PosterPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Waw-f1-Pfh">
-                                <rect key="frame" x="0.0" y="56" width="375" height="547"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="579"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -304,6 +305,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uig-FD-P2I"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qni-tA-ocl"/>
                     <connections>
                         <outlet property="favoriteBarButtonItem" destination="hMm-5H-1Df" id="pkr-Iw-4FZ"/>
                         <outlet property="imageView" destination="Waw-f1-Pfh" id="4f5-YG-VOa"/>
@@ -312,12 +314,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Al-F5-wjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2834" y="-789"/>
+            <point key="canvasLocation" x="3772" y="-789.35532233883066"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bea-I1-woY">
             <objects>
                 <tabBarController id="KyE-Nk-bg6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="piZ-DY-87k"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kSj-eJ-T6q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -331,7 +334,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4t-d6-lkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-513" y="-789"/>
+            <point key="canvasLocation" x="424.80000000000001" y="-789.35532233883066"/>
         </scene>
         <!--Search-->
         <scene sceneID="GPc-pi-SAd">
@@ -339,7 +342,7 @@
                 <navigationController id="WNA-Kx-mKN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="Genre" id="59y-Jw-96W"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2ua-eg-dTl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -348,25 +351,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rip-6M-s3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="-789"/>
+            <point key="canvasLocation" x="1508" y="-789.35532233883066"/>
         </scene>
         <!--Search-->
         <scene sceneID="kRS-Ex-mtt">
             <objects>
                 <viewController title="Search" id="yrH-SK-k4n" customClass="SearchViewController" customModule="TheMovieManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DPL-Qi-ip7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lAX-ep-s5T">
-                                <rect key="frame" x="0.0" y="56" width="375" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="yrH-SK-k4n" id="p1i-99-XUr"/>
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SDK-mv-Sbc">
-                                <rect key="frame" x="0.0" y="112" width="375" height="486"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="518"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" id="C3L-o9-Atr">
@@ -411,7 +414,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIO-71-FXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1726" y="-789"/>
+            <point key="canvasLocation" x="2664.8000000000002" y="-789.35532233883066"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xOB-Ew-OoP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="IB1-v4-ETb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8MU-jZ-Xvq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="We5-fP-h8M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2h-ip-O7A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1490.4000000000001" y="-789.35532233883066"/>
         </scene>
     </scenes>
     <resources>
